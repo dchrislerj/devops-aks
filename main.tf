@@ -18,7 +18,7 @@ module "ServicePrincipal" {
 
 resource "azurerm_role_assignment" "rolespn" {
 
-  scope                = "/subscriptions/fd40376c-d24e-450a-9891-f65c046454c0/resourceGroups/test-devopsph-rg"
+  scope                = "[Edit this part]"
   role_definition_name = "Contributor"
   principal_id         = module.ServicePrincipal.service_principal_object_id
 
